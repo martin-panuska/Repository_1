@@ -4,6 +4,8 @@
 
 package com.mp.helper;
 
-public class Helper {
+import java.text.SimpleDateFormat;
 
+public class Helper {
+	private static SimpleDateFormat df = new SimpleDateFormat();
 }
