@@ -8,4 +8,8 @@ import java.text.SimpleDateFormat;
 
 public class Helper {
 	private static SimpleDateFormat df = new SimpleDateFormat();
+	
+	public static SimpleDateFormat getDf(){
+		return df;
+	}
 }
