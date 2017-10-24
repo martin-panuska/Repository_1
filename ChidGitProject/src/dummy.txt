@@ -1,6 +1,1 @@
-<<<<<<< HEAD
-=======
-empty
-
-
->>>>>>> branch 'Phase1' of https://github.com/martin-panuska/Repository_1.git
+Modified remotely
