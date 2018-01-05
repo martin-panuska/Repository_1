@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web>
+	<!-- These are two equal mail data sources. Difference is in the way how JNDI is defined. -->
+	<!-- Defined in naming subsystem -->
+    <resource-ref>
+        <res-ref-name>mail/martin/Session1</res-ref-name>
+        <res-type>javax.mail.Session</res-type>
+        <jndi-name>java:global/mail/martin/Session</jndi-name>
+    </resource-ref>
+    <!-- Defined directly in mail datasource -->
+    <resource-ref>
+        <res-ref-name>mail/martin/Session2</res-ref-name>
+        <res-type>javax.mail.Session</res-type>
+        <jndi-name>java:jboss/mail/TestMail</jndi-name>
+    </resource-ref>
+</jboss-web>
