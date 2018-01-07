@@ -1,4 +1,4 @@
-package com.martin.web.rest.service;
+package com.martin.web.rest.server.service;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -19,7 +19,6 @@ public class HelloRest {
 		return "<?xml version=\"1.0\"?>" + "<hello> Hello Jersey" + "</hello>";
 	}
 
-	// This method is called if HTML is request
 	@GET
 	@Produces(MediaType.TEXT_HTML)
 	public String sayHtmlHello() {
