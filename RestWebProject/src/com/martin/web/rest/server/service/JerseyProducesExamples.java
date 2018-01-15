@@ -1,5 +1,6 @@
 package com.martin.web.rest.server.service;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -37,6 +38,7 @@ public class JerseyProducesExamples {
 	@GET
 	/** qs defines preference of server.*/
 	@Produces({MediaType.APPLICATION_JSON + "; qs=0.8", MediaType.APPLICATION_XML + "; qs=0.9"})
+	@Consumes("text/plain")
 	public Person getXmlOrJsonPerson() {
 		Person p = new Person();
 		p.setFirstName("Martin");

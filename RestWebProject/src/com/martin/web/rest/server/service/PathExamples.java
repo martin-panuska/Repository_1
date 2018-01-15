@@ -7,12 +7,19 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 @Path("/pathExamples/{firstName: [a-zA-Z][a-zA-Z_0-9]*}")
-public class JerseyPathExamples {
+public class PathExamples {
 	@PathParam("firstName")
 	private String firstName;
 	
-	public JerseyPathExamples() {
+	public PathExamples() {
 		super();
+	}
+	
+	//http://localhost:8080/RestWebProject/rest/pathExamples/Matko
+	@GET
+	@Produces(MediaType.TEXT_HTML)
+	public String getDefaultResponse() {
+		return "This is default response for HTML request";
 	}
 	
 	//http://localhost:8080/RestWebProject/rest/pathExamples/Matko

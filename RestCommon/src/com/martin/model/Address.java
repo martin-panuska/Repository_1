@@ -1,13 +1,25 @@
 package com.martin.model;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.ws.rs.DefaultValue;
+import javax.ws.rs.HeaderParam;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.QueryParam;
 
-@XmlRootElement
 public class Address {
+	@PathParam("state")
+	@DefaultValue("N/A")
 	private String state;
+	
+	@PathParam("city")
+	@DefaultValue("N/A")
 	private String city;
+	
+	@QueryParam("street")
+	@DefaultValue("N/A")
 	private String street;
-	private String zip;
+	
+	@HeaderParam("Accept")
+	private String accept;
 	
 	public Address() {
 		super();
@@ -35,13 +47,5 @@ public class Address {
 
 	public void setStreet(String street) {
 		this.street = street;
-	}
-
-	public String getZip() {
-		return zip;
-	}
-
-	public void setZip(String zip) {
-		this.zip = zip;
 	}
 }
