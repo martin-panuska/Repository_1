@@ -6,6 +6,7 @@ import com.martin.model.constant.Gender;
 
 @XmlRootElement
 public class Person {
+	private long id;
 	private String firstName;
 	private String lastName;
 	private int age;
@@ -45,5 +46,13 @@ public class Person {
 
 	public void setGender(Gender gender) {
 		this.gender = gender;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 }
