@@ -21,6 +21,11 @@
 			<version>2.25.1</version>
 		</dependency>
 		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-multipart</artifactId>
+			<version>2.25.1</version>
+		</dependency>
+		<dependency>
 			<groupId>com.martin</groupId>
 			<artifactId>RestCommon</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
