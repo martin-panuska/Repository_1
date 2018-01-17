@@ -58,7 +58,7 @@ public class PersonService {
     @Produces({MediaType.APPLICATION_JSON})
     public Response getPersonAnotherApproach(@PathParam("personID") long id) {
         if(id < 0) {
-            return Response.status(400).entity("Please provide valid ID").build();
+            return Response.status(400).entity("Please provide valid person ID").build();
         }
         
         Person p = (Person) ObjectStorage.getObject(id);
